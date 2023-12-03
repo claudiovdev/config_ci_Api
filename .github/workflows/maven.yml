@@ -31,6 +31,9 @@ jobs:
 
     - name: Create-DB
       run: docker-compose up -d
+
+    - name: Run Tests
+      run: mvn test --file ./dev/pom.xml
       
     - name: Build with Maven
       run: mvn -B package --file ./dev/pom.xml
