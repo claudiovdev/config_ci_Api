@@ -9,6 +9,8 @@
 name: CI Api Java
 
 on:
+  push:
+    branches: ['*']
   pull_request:
     branches: [ "producao" ]
 
