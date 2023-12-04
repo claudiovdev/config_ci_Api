@@ -28,8 +28,8 @@ jobs:
     - name: Set up JDK 17 and Environment Variables
       uses: actions/setup-java@v3
       env:
-        USUARIODB: ${{secrets.USUARIODB}}
-        SENHADB: ${{secrets.SENHADB}}
+        USUARIODB: ${{ secrets.USUARIODB }}
+        SENHADB: ${{ secrets.SENHADB }}
       with:
         java-version: '17'
         distribution: 'temurin'
