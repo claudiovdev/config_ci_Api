@@ -26,15 +26,13 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Set up JDK 17 and Environment Variables
-      env:
-        USUARIODB: ${{secrets.USUARIODB}}
-        SENHADB: ${{secrets.SENHADB}}
-
       uses: actions/setup-java@v3
       with:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
+        USUARIODB: ${{secrets.USUARIODB}}
+        SENHADB: ${{secrets.SENHADB}}
 
     - name: Build-DB
       run: docker-compose build
