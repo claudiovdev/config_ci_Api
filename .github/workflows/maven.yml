@@ -12,10 +12,13 @@ on:
   push:
     branches:
       - dev
+      - homolog
       - producao
-      - desenvolvimento
-  
-
+  pull_request:
+    branches:
+      - dev
+      - homolog
+      - producao
 jobs:
   build:
 
