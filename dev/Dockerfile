@@ -12,6 +12,6 @@ RUN mvn -f /home/app/pom.xml clean package -Dmaven.test.skip
 FROM openjdk:17-jdk-alpine
 EXPOSE 8080
 ENV USUARIODB=root
-ENV SENHADB=vinicius123
+ENV SENHADB=root
 COPY --from=build /home/app/target/*.jar app.jar
 ENTRYPOINT ["java","-jar","/app.jar"]
