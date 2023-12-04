@@ -23,25 +23,14 @@ jobs:
   build:
     runs-on: 'ubuntu-latest'
 
-
     steps:
     - uses: actions/checkout@v3
     - name: Set up JDK 17 and Environment Variables
-
       uses: actions/setup-java@v3
       with:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
-
-    - name: Set up JDK 17 and Environment Variables
-      run: |
-        echo "USUARIODB=${{ secrets.USUARIODB }}" >> $GITHUB_ENV
-        echo "SENHADB=${{ secrets.SENHADB }}" >> $GITHUB_ENV
-
-        echo "USUARIODB=${{ secrets.USUARIODB }}"
-        echo "SENHADB=${{ secrets.SENHADB }}"
-        
 
 
     - name: Build-DB
