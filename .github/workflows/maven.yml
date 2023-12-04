@@ -22,8 +22,8 @@ jobs:
 
       - name: Set up JDK 17 and Environment Variables
         run: |
-          echo "BANCO_USUARIO=${{ secrets.USUARIODB }}" >> $GITHUB_ENV
-          echo "BANCO_SENHA=${{ secrets.SENHADB }}" >> $GITHUB_ENV
+          echo "USUARIODB=${{ secrets.USUARIODB }}" >> $GITHUB_ENV
+          echo "SEMHADB=${{ secrets.SENHADB }}" >> $GITHUB_ENV
 
         uses: actions/setup-java@v3
         with:
