@@ -30,8 +30,6 @@ jobs:
       run: |
         echo "USUARIODB=${{ secrets.USUARIODB }}" >> $GITHUB_ENV
         echo "SENHADB=${{ secrets.SENHADB }}" >> $GITHUB_ENV
-        echo "BANCO_USUARIO=${{ secrets.USUARIODB }}" >> $GITHUB_ENV
-        echo "BANCO_SENHA=${{ secrets.SENHADB }}" >> $GITHUB_ENV
         
         echo "USUARIODB=${{ secrets.USUARIODB }}"
         echo "SENHADB=${{ secrets.SENHADB }}"
