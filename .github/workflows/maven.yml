@@ -14,11 +14,7 @@ on:
       - dev
       - producao
       - desenvolvimento
-  pull_request:
-    branches: 
-      - dev
-      - producao
-      - homolog
+  
 
 jobs:
   build:
