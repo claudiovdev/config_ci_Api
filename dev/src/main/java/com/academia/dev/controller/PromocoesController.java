@@ -14,6 +14,7 @@ import java.util.List;
 @CrossOrigin(origins = "*")
 public class PromocoesController {
 
+
     @Autowired
     PromocaoService promocaoService;
 
