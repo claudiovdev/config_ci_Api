@@ -1,0 +1,21 @@
+version: "3"
+services:
+  db:
+    image: mysql
+    volumes:
+      - dbdata:/var/lib/mysql
+    networks:
+      - clientes-compose-network
+    restart: always
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: vinicius123
+      MYSQL_DATABASE: academia_dev
+
+volumes:
+  dbdata:
+
+networks:
+  clientes-compose-network:
+    driver: bridge
