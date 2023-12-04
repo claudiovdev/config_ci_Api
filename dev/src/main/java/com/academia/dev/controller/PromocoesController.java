@@ -21,7 +21,6 @@ public class PromocoesController {
     public ResponseEntity<Promocao> cadastrarUsuarios(@RequestBody Promocao promocao){
         Promocao promocoes = promocaoService.salvar(promocao);
         return ResponseEntity.status(HttpStatus.CREATED).body(promocoes);
-
     }
 
     @GetMapping
