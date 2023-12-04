@@ -10,7 +10,7 @@ name: CI Api Java
 
 on:
   push:
-    branches: ['*']
+    branches: "dev"
   pull_request:
     branches: [ "producao" ]
 
