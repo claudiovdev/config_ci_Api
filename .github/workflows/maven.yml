@@ -10,9 +10,11 @@ name: CI Api Java
 
 on:
   push:
-    branches: "dev"
+    branches:
+      - dev
   pull_request:
-    branches: [ "producao" ]
+    branches: 
+      - producao
 
 jobs:
   build:
