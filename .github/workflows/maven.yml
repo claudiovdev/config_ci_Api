@@ -23,8 +23,8 @@ jobs:
   build:
     runs-on: 'ubuntu-latest'
     env:
-      USUARIODB: 'root'
-      SENHADB: 'vinicius123'
+      USUARIODB: ${{ secrets.USUARIODB }}
+      SENHADB: ${{ secrets.SENHADB }}
 
     steps:
     - uses: actions/checkout@v3
