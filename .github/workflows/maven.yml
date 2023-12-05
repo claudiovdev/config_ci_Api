@@ -22,6 +22,9 @@ on:
 jobs:
   build:
     runs-on: 'ubuntu-latest'
+    env:
+      USUARIODB: 'root'
+      SENHADB: 'vinicius123'
 
     steps:
     - uses: actions/checkout@v3
