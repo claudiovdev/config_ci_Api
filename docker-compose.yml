@@ -10,7 +10,7 @@ services:
     ports:
       - "3306:3306"
     environment:
-      MYSQL_ROOT_PASSWORD: vinicius123
+      MYSQL_ROOT_PASSWORD: ${{secrets.SENHADB}}
       MYSQL_DATABASE: academia_dev
 
 volumes:
