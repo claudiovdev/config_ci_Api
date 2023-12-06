@@ -13,6 +13,7 @@ on:
     branches:
       - dev
       - homolog
+      - producao
   pull_request:
     branches:
       - producao
