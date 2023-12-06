@@ -19,6 +19,10 @@ on:
 jobs:
   check-applicaiton:
     runs-on: 'ubuntu-latest'
+    strategy:
+      matrix:
+        java: ['8', '17']
+
     env:
       USUARIODB: ${{ secrets.USUARIODB }}
       SENHADB: ${{ secrets.SENHADB }}
@@ -28,7 +32,7 @@ jobs:
     - name: Set up JDK 17 and Environment Variables
       uses: actions/setup-java@v3
       with:
-        java-version: '17'
+        java-version: ${{matrix.java}}
         distribution: 'temurin'
         cache: maven
 
