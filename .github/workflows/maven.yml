@@ -20,9 +20,6 @@ on:
 jobs:
   check-applicaiton:
     runs-on: 'ubuntu-latest'
-    strategy:
-      matrix:
-        java: ['8', '17']
 
     env:
       USUARIODB: ${{ secrets.USUARIODB }}
