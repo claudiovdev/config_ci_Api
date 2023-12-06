@@ -14,6 +14,7 @@ on:
       - dev
       - homolog
       - producao
+      - dev02
   pull_request:
     branches:
       - dev
