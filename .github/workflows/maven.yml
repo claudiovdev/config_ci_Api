@@ -20,7 +20,8 @@ on:
       - homolog
       - producao
 jobs:
-  build:
+  check-applicaiton:
+    build:
     runs-on: 'ubuntu-latest'
     env:
       USUARIODB: ${{ secrets.USUARIODB }}
