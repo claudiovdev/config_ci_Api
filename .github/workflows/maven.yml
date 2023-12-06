@@ -21,7 +21,6 @@ on:
       - producao
 jobs:
   check-applicaiton:
-    build:
     runs-on: 'ubuntu-latest'
     env:
       USUARIODB: ${{ secrets.USUARIODB }}
