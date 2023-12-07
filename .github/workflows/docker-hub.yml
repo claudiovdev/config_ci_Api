@@ -26,6 +26,6 @@ jobs:
       uses: docker/build-push-action@v5
       with:
         context: .
-        file: /dev/.
+        file: ${{ github.workspace }}/dev/.
         push: true
         tags: viniciuscfn/api-ci-java:latest
