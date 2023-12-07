@@ -57,7 +57,7 @@ jobs:
     - name: Build and push
       uses: docker/build-push-action@v5
       with:
-        context: /dev/.
+        context: ./dev/.
         push: true
         tags: viniciuscfn/api-ci-java:latest
 
