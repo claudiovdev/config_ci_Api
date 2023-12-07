@@ -25,8 +25,7 @@ jobs:
     - name: Build and push
       uses: docker/build-push-action@v5
       with:
-        context: .
-        file: /home/runner/work/config_ci_Api/dev/Dockerfile
+        context: /dev/.
         push: true
         tags: viniciuscfn/api-ci-java:latest
         
