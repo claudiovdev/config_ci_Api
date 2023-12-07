@@ -54,5 +54,5 @@ jobs:
       uses: docker/build-push-action@v5
       with:
         context: ./dev/.
-        push: true
+        push: false
         tags: viniciuscfn/api-ci-java:latest
