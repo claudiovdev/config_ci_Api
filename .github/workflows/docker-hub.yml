@@ -29,3 +29,4 @@ jobs:
         push: true
         tags: viniciuscfn/api-ci-java:latest
         
+        
