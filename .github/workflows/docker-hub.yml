@@ -26,7 +26,7 @@ jobs:
       uses: docker/build-push-action@v5
       with:
         context: .
-        file: /home/runner/work/config_ci_Api/config_ci_Api/dev/Dockerfile
+        file: /home/runner/work/config_ci_Api/dev/Dockerfile
         push: true
         tags: viniciuscfn/api-ci-java:latest
         
