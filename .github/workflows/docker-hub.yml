@@ -29,3 +29,4 @@ jobs:
         file: ${{ github.workspace }}/dev/Dockerfile
         push: true
         tags: viniciuscfn/api-ci-java:latest
+        
