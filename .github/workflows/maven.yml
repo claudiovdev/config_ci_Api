@@ -45,5 +45,5 @@ jobs:
 
   docker:
    needs: check-applicaiton
-   uses: ./.github/workflows/Docker-hub.yml
+   uses: ./.github/workflows/docker-hub.yml
    secrets: inherit
