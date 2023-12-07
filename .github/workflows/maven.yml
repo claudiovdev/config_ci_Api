@@ -42,8 +42,4 @@ jobs:
 
     - name: Build with Maven
       run: mvn -B package --file ./dev/pom.xml
-  docker:
-    needs: check-applicaiton
-    uses: ./.github/workflows/Docker.yml
-    
     
