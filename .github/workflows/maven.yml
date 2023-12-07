@@ -61,3 +61,4 @@ jobs:
         context: /dev/.
         push: true
         tags: viniciuscfn/api-ci-java:latest
+    
