@@ -30,7 +30,6 @@ jobs:
         distribution: 'temurin'
         cache: maven
 
-
     - name: Build-DB
       run: docker-compose build
 
